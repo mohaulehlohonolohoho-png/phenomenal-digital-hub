@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Phenomenal Digital & Business Hub</title>
+
+  <meta name="description" content="Business, digital technology, gaming and creativity. Think Beyond. Build Beyond. Become Phenomenal.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #090909;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #e50914;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span,
+    .red {
+      color: #ff202b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff202b;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 75px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #351014 0%, #090909 65%);
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 8vw, 65px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #cccccc;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e50914;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #b80009;
+    }
+
+    .outline {
+      background: transparent;
+      border: 1px solid #ff202b;
+    }
+
+    section {
+      padding: 65px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      text-align: center;
+      color: #bbbbbb;
+      max-width: 700px;
+      margin: 0 auto 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #292929;
+      border-top: 3px solid #e50914;
+      border-radius: 10px;
+      padding: 25px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .icon {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #bbbbbb;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #111111;
+      max-width: none;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact-box {
+      background: #151515;
+      border: 1px solid #333333;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+    }
+
+    .contact-box a {
+      color: #ff555d;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #050505;
+      border-top: 1px solid #292929;
+      color: #aaaaaa;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      PHENOMENAL<span>.</span>
+    </div>
+
+    <p>Digital & Business Hub</p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#business">Business</a>
+      <a href="#digital">Digital</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#creative">Creative</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero" id="home">
+      <p class="red">WELCOME TO OUR WORLD</p>
+
+      <h1>
+        THINK BEYOND.<br>
+        BUILD <span class="red">BEYOND.</span><br>
+        BECOME PHENOMENAL.
+      </h1>
+
+      <p>
+        Welcome to Phenomenal Digital & Business Hub,
+        where entrepreneurship, technology, gaming and
+        creativity come together to explore new possibilities.
+      </p>
+
+      <div>
+        <a href="#business" class="button">Explore Our Hub</a>
+        <a href="#contact" class="button outline">Contact Us</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2 class="section-title">About <span class="red">Phenomenal</span></h2>
+
+      <p class="section-intro">
+        One vision. Multiple possibilities. A future built through
+        creativity, learning, innovation and collaboration.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🎯</div>
+          <h3>Our Vision</h3>
+          <p>
+            To build a growing digital and business ecosystem
+            that embraces innovation and creates opportunities.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>Our Mission</h3>
+          <p>
+            To explore ideas, develop digital projects,
+            connect with people and encourage entrepreneurship.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Our Values</h3>
+          <p>
+            Creativity, integrity, continuous learning,
+            collaboration and responsible innovation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="business">
+      <h2 class="section-title">Business & Entrepreneurship</h2>
+
+      <p class="section-intro">
+        Exploring business ideas, professional networking
+        and opportunities for growth.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">💼</div>
+          <h3>Business Development</h3>
+          <p>
+            Developing ideas, exploring business models
+            and planning future projects.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌍</div>
+          <h3>Networking</h3>
+          <p>
+            Building professional connections and exploring
+            opportunities for collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="digital">
+      <h2 class="section-title">Digital Technology</h2>
+
+      <p class="section-intro">
+        Learning, experimenting and building for the digital future.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>
+            Creating responsive websites and exploring
+            useful online tools.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Digital Innovation</h3>
+          <p>
+            Exploring applications, digital platforms
+            and emerging technologies.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔗</div>
+          <h3>Future Projects</h3>
+          <p>
+            Exploring decentralised applications and
+            new digital business possibilities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gaming">
+      <h2 class="section-title">Phenomenal <span class="red">Gaming</span></h2>
+
+      <p class="section-intro">
+        Gaming is part of our creative identity.
+        We explore gameplay, gaming communities and content creation.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🎮</div>
+          <h3>Phenomenal23</h3>
+          <p>
+            Our gaming identity, representing our passion
+            for gaming and digital entertainment.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏆</div>
+          <h3>Gaming Content</h3>
+          <p>
+            Gameplay, game reviews, creative gaming projects
+            and community engagement.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🕹️</div>
+          <h3>Gaming Innovation</h3>
+          <p>
+            Exploring gaming technology, esports and
+            legitimate gaming opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="creative">
+      <h2 class="section-title">Creative Studio</h2>
+
+      <p class="section-intro">
+        Bringing ideas to life through visual communication
+        and digital creativity.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>Graphic Design</h3>
+          <p>
+            Exploring logos, promotional artwork and
+            digital brand identity.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📸</div>
+          <h3>Digital Content</h3>
+          <p>
+            Developing concepts for social media,
+            promotions and creative projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="about">
+      <div class="about-content">
+        <h2 class="section-title">
+          The Future Is <span class="red">Phenomenal</span>
+        </h2>
+
+        <p class="section-intro">
+          Every great project begins with an idea.
+          Let's keep learning, building and exploring
+          what is possible.
+        </p>
+
+        <a href="#contact" class="button">Connect With Us</a>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+
+      <p class="section-intro">
+        Have a question, idea or potential collaboration?
+        Get in touch.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Phenomenal Digital & Business Hub</strong></p>
+
+        <p>
+          📱 WhatsApp:
+          <a href="https://wa.me/27647751959">
+            064 775 1959
+          </a>
+        </p>
+
+        <p>
+          📧 Email:
+          <span>Update with your new Outlook address</span>
+        </p>
+
+        <p>
+          📍 Location: Virginia, Free State, South Africa
+        </p>
+
+        <a
+          class="button"
+          href="https://wa.me/27647751959?text=Hello%20Phenomenal%20Digital%20%26%20Business%20Hub"
+        >
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>PHENOMENAL DIGITAL & BUSINESS HUB</strong>
+
+    <p>Think Beyond. Build Beyond. Become Phenomenal.</p>
+
+    <p>© <span id="year">2026</span> Phenomenal Digital & Business Hub.</p>
+
+    <p>Built with vision, creativity and ambition.</p>
+  </footer>
+
+</body>
+</html>
