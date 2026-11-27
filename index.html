@@ -208,7 +208,51 @@
     footer strong {
       color: #ffffff;
     }
-  </style>
+    /* Pricing section design */
+    #pricing .cards {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    #pricing .card {
+      background: linear-gradient(145deg, #1b1b1b, #101010);
+      border: 1px solid #333;
+      border-top: 4px solid #e50914;
+      border-radius: 14px;
+      padding: 28px;
+      min-height: 210px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    #pricing .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(229, 9, 20, 0.15);
+    }
+
+    #pricing .card h3 {
+      color: #ffffff;
+      margin: 14px 0;
+    }
+
+    #pricing .card p {
+      color: #dddddd;
+      line-height: 1.7;
+      margin: 8px 0;
+    }
+
+    #pricing .card .icon {
+      color: #e50914;
+      font-size: 38px;
+    }
+
+    #pricing .price-highlight {
+      color: #ff202b;
+      font-weight: 800;
+      font-size: 1.15em;
+    }
+
+</style>
 </head>
 
 <body>
@@ -391,24 +435,24 @@
     <div class="card">
       <div class="icon">💼</div>
       <h3>Business Services</h3>
-      <p>Business profiles: R100</p>
-      <p>Document typing: R30</p>
+      <p>Business profiles: <span class="price-highlight">R100</span></p>
+      <p>Document typing: <span class="price-highlight">R30</span></p>
       <p>Business planning: Request a quotation</p>
     </div>
     <div class="card">
       <div class="icon">💻</div>
       <h3>Website & Digital Solutions</h3>
-      <p>Basic website development from R250.</p>
+      <p>Basic website development from <span class="price-highlight">R250</span>.</p>
     </div>
     <div class="card">
       <div class="icon">🎨</div>
       <h3>Creative Services</h3>
-      <p>Business posters and advertisements: R40.</p>
+      <p>Business posters and advertisements: <span class="price-highlight">R40</span>.</p>
     </div>
     <div class="card">
       <div class="icon">📄</div>
       <h3>CV & Professional Profiles</h3>
-      <p>CV preparation: R50.</p>
+      <p>CV preparation: <span class="price-highlight">R50</span>.</p>
     </div>
     <div class="card">
       <div class="icon">🎮</div>
