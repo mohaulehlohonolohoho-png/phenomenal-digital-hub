@@ -208,51 +208,7 @@
     footer strong {
       color: #ffffff;
     }
-    /* Pricing section design */
-    #pricing .cards {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    #pricing .card {
-      background: linear-gradient(145deg, #1b1b1b, #101010);
-      border: 1px solid #333;
-      border-top: 4px solid #e50914;
-      border-radius: 14px;
-      padding: 28px;
-      min-height: 210px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-
-    #pricing .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 24px rgba(229, 9, 20, 0.15);
-    }
-
-    #pricing .card h3 {
-      color: #ffffff;
-      margin: 14px 0;
-    }
-
-    #pricing .card p {
-      color: #dddddd;
-      line-height: 1.7;
-      margin: 8px 0;
-    }
-
-    #pricing .card .icon {
-      color: #e50914;
-      font-size: 38px;
-    }
-
-    #pricing .price-highlight {
-      color: #ff202b;
-      font-weight: 800;
-      font-size: 1.15em;
-    }
-
-</style>
+    </style>
 </head>
 
 <body>
@@ -266,12 +222,13 @@
 
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#business">Business</a>
-      <a href="#services">Services</a>
-      <a href="#digital">Digital</a>
-      <a href="#gaming">Gaming</a>
-      <a href="#creative">Creative</a>
+      <a href="#business">Digital Business</a>
+      <a href="#services">Digital E-Service</a>
+      <a href="#digital">Technology & Innovation</a>
+      <a href="#creative">Creative Studios</a>
+      <a href="#gaming">Digital Gaming</a>
+      <a href="#digital-education">Digital Education</a>
+      <a href="#library">Digital Library</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -298,6 +255,19 @@
         <a href="#contact" class="button outline">Contact Us</a>
       </div>
     </div>
+
+    <section id="departments">
+      <h2 class="section-title">Explore Our <span class="red">Departments</span></h2>
+      <p class="section-intro">Choose a department to discover its services, projects and opportunities.</p>
+      <div class="cards">
+        <div class="card"><div class="icon">💼</div><h3>Digital Business</h3><p>Business development, entrepreneurship and job opportunities.</p><a class="button" href="#business">Explore Department</a></div>
+        <div class="card"><div class="icon">🛍️</div><h3>Digital E-Service</h3><p>Browse services, prices and ordering information.</p><a class="button" href="#services">Explore Department</a></div>
+        <div class="card"><div class="icon">💻</div><h3>Digital Technology & Innovation</h3><p>Websites, applications, AI and digital solutions.</p><a class="button" href="#digital">Explore Department</a></div>
+        <div class="card"><div class="icon">🎨</div><h3>Digital Creative Studios</h3><p>Design, branding, advertising and creative production.</p><a class="button" href="#creative">Explore Department</a></div>
+        <div class="card"><div class="icon">🎮</div><h3>Digital Gaming</h3><p>Gaming projects, original games and interactive entertainment.</p><a class="button" href="#gaming">Explore Department</a></div>
+        <div class="card"><div class="icon">🎓</div><h3>Digital Education</h3><p>Education, learning, skills and personal development.</p><a class="button" href="#digital-education">Explore Department</a></div>
+      </div>
+    </section>
 
     <section id="about">
       <h2 class="section-title">About <span class="red">Phenomenal</span></h2>
@@ -338,7 +308,7 @@
     </section>
 
     <section id="business">
-      <h2 class="section-title">Business & Entrepreneurship</h2>
+      <h2 class="section-title">Digital Business</h2>
 
       <p class="section-intro">
         Exploring business ideas, professional networking
@@ -363,13 +333,21 @@
             opportunities for collaboration.
           </p>
         </div>
-      </div>
+
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Digital Job Hub</h3>
+          <p>Explore remote jobs, local and international opportunities, freelance work, internships and learnerships. Opportunities should always be checked with the original advertiser.</p>
+        </div>
+</div>
     </section>
 
 
 
 <section id="services">
-  <h2 class="section-title">Our Services Catalogue</h2>
+  <h2 class="section-title">Digital E-Service</h2>
+<p class="section-intro">Browse our services, transparent starting prices and ordering process.</p>
+<p class="section-intro"><a class="button" href="#how-to-order">How to Order</a></p>
   <p class="section-intro">
     Practical digital, creative and business services designed to help
     individuals, entrepreneurs and organisations move forward.
@@ -438,25 +416,9 @@
       <a class="button" href="https://wa.me/27647751959?text=Hello%20Phenomenal%20Digital%20%26%20Business%20Hub.%20I%20am%20interested%20in%20Business%20Planning%0A%0AFull%20name%3A%0AService%20required%3A%0ABrief%20description%20of%20my%20request%3A%0ARequired%20deadline%3A%0ASupporting%20documents%20or%20attachments%3A%0A">Request a Quote</a>
     </div>
 
-    <div class="card">
-      <div class="icon">🎮</div>
-      <span class="service-tag">Gaming Division</span>
-      <h3>Gaming & Entertainment</h3>
-      <p>Gaming concepts, creative entertainment projects
-      and Phenomenal Gaming initiatives.</p>
-      <p><strong>Price: Request a quotation</strong></p>
-      <a class="button" href="https://wa.me/27647751959?text=Hello%20Phenomenal%20Digital%20%26%20Business%20Hub.%20I%20am%20interested%20in%20Gaming%20Projects%0A%0AFull%20name%3A%0AService%20required%3A%0ABrief%20description%20of%20my%20request%3A%0ARequired%20deadline%3A%0ASupporting%20documents%20or%20attachments%3A%0A">Enquire Now</a>
-    </div>
 
-    <div class="card">
-      <div class="icon">📚</div>
-      <span class="service-tag">Education</span>
-      <h3>Digital Learning</h3>
-      <p>Knowledge sharing, digital literacy and learning
-      opportunities for individuals and communities.</p>
-      <p><strong>Price: Request a quotation</strong></p>
-      <a class="button" href="https://wa.me/27647751959?text=Hello%20Phenomenal%20Digital%20%26%20Business%20Hub.%20I%20am%20interested%20in%20Digital%20Learning%0A%0AFull%20name%3A%0AService%20required%3A%0ABrief%20description%20of%20my%20request%3A%0ARequired%20deadline%3A%0ASupporting%20documents%20or%20attachments%3A%0A">Enquire Now</a>
-    </div>
+
+
 
   </div>
 </section>
@@ -502,46 +464,9 @@
   <p class="section-intro"><strong>Important:</strong> Turnaround times and payment arrangements are confirmed before work begins. Services requiring individual assessment are quoted separately.</p>
 </section>
 
-<section id="pricing">
-  <h2 class="section-title">Pricing & Service Packages</h2>
-  <p class="section-intro">Affordable services with transparent starting prices.</p>
-  <div class="cards">
-    <div class="card">
-      <div class="icon">💼</div>
-      <h3>Business Services</h3>
-      <p>Business profiles: <span class="price-highlight">R100</span></p>
-      <p>Document typing: <span class="price-highlight">R30</span></p>
-      <p>Business planning: Request a quotation</p>
-    </div>
-    <div class="card">
-      <div class="icon">💻</div>
-      <h3>Website & Digital Solutions</h3>
-      <p>Basic website development from <span class="price-highlight">R250</span>.</p>
-    </div>
-    <div class="card">
-      <div class="icon">🎨</div>
-      <h3>Creative Services</h3>
-      <p>Business posters and advertisements: <span class="price-highlight">R40</span>.</p>
-    </div>
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>CV & Professional Profiles</h3>
-      <p>CV preparation: <span class="price-highlight">R50</span>.</p>
-    </div>
-    <div class="card">
-      <div class="icon">🎮</div>
-      <h3>Gaming Projects</h3>
-      <p>Custom gaming projects: Request a quotation.</p>
-    </div>
-    <div class="card">
-      <div class="icon">📚</div>
-      <h3>Digital Learning</h3>
-      <p>Digital learning services: Request a quotation.</p>
-    </div>
-  </div>
-</section>
+
     <section id="digital">
-      <h2 class="section-title">Digital Technology</h2>
+      <h2 class="section-title">Digital Technology & Innovation</h2>
 
       <p class="section-intro">
         Learning, experimenting and building for the digital future.
@@ -593,11 +518,7 @@
           <a class="button" href="publications.html">Read Publications</a>
         </div>
 
-        <div class="card">
-          <div class="icon">🎓</div>
-          <h3>Education & Learning</h3>
-          <p>Learning resources, digital literacy and opportunities to develop new skills.</p>
-        </div>
+
 
         <div class="card">
           <div class="icon">💼</div>
@@ -611,16 +532,30 @@
           <p>Discover African storytelling, culture, heritage and original creative works.</p>
         </div>
 
+
+      </div>
+    </section>
+
+
+    <section id="digital-education">
+      <h2 class="section-title">Digital <span class="red">Education</span></h2>
+      <p class="section-intro">A department dedicated to education, lifelong learning, skills development and personal growth.</p>
+      <div class="cards">
         <div class="card">
-          <div class="icon">💡</div>
+          <div class="icon">🎓</div>
+          <h3>Education & Learning</h3>
+          <p>Educational resources, study materials, digital courses, tutorials, research and practical skills development.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌱</div>
           <h3>Personal Development & Leadership</h3>
-          <p>Ideas and resources that encourage confidence, leadership and continuous growth.</p>
+          <p>Self-improvement, leadership, communication, life skills, confidence and professional development.</p>
         </div>
       </div>
     </section>
 
     <section id="gaming">
-      <h2 class="section-title">Phenomenal <span class="red">Gaming</span></h2>
+      <h2 class="section-title">Digital <span class="red">Gaming</span></h2>
 
       <p class="section-intro">
         Gaming is part of our creative identity.
@@ -628,14 +563,7 @@
       </p>
 
       <div class="cards">
-        <div class="card">
-          <div class="icon">🎮</div>
-          <h3>Phenomenal23</h3>
-          <p>
-            Our gaming identity, representing our passion
-            for gaming and digital entertainment.
-          </p>
-        </div>
+
 
         <div class="card">
           <div class="icon">🏆</div>
@@ -658,7 +586,7 @@
     </section>
 
     <section id="creative">
-      <h2 class="section-title">Creative Studio</h2>
+      <h2 class="section-title">Digital Creative Studios</h2>
 
       <p class="section-intro">
         Bringing ideas to life through visual communication
