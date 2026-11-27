@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phenomenal Publications | Phenomenal Digital & Business Hub</title>
+  <meta name="description" content="Explore original Phenomenal publications, the Power Book series and inspirational writing.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #090909;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111111;
+      padding: 22px 15px;
+      text-align: center;
+      border-bottom: 2px solid #e50914;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span,
+    .red {
+      color: #ff202b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff202b;
+    }
+
+    .hero {
+      padding: 75px 20px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, #351014 0%, #090909 70%);
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 22px;
+      color: #cccccc;
+    }
+
+    .section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #cccccc;
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #333333;
+      border-top: 3px solid #e50914;
+      border-radius: 8px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #cccccc;
+      margin-bottom: 15px;
+    }
+
+    .status {
+      display: inline-block;
+      color: #ff202b;
+      font-weight: bold;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e50914;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 11px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #ff202b;
+    }
+
+    .coming {
+      background: #111111;
+      border-left: 3px solid #e50914;
+      padding: 22px;
+      margin-top: 30px;
+      color: #cccccc;
+    }
+
+    footer {
+      background: #111111;
+      border-top: 2px solid #e50914;
+      text-align: center;
+      padding: 25px 15px;
+      color: #aaaaaa;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">PHENOMENAL<span>.</span></div>
+    <p>Digital & Business Hub</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#library">Digital Library</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="red">IDEAS. KNOWLEDGE. LEGACY.</p>
+      <h1>Phenomenal <span class="red">Publications</span></h1>
+      <p>
+        A home for original writing, meaningful ideas and stories that
+        encourage learning, personal growth and positive change.
+      </p>
+      <a class="button" href="#power-books">Explore the Power Book Series</a>
+    </section>
+
+    <section class="section" id="power-books">
+      <h2 class="section-title">The Power Book Series</h2>
+      <p class="intro">
+        Every journey begins somewhere. The Power Book series explores
+        growth, experience, reflection and the impact of small steps.
+      </p>
+
+      <div class="books">
+        <article class="card">
+          <div class="red">VOLUME 001</div>
+          <h3>Small Steps Create Big Changes</h3>
+          <p>
+            The first volume in the Power Book series. A publication
+            built around personal growth, consistent effort and the
+            belief that meaningful change begins with small steps.
+          </p>
+          <span class="status">Publication: Volume 001</span>
+        </article>
+
+        <article class="card">
+          <div class="red">VOLUME 002</div>
+          <h3>Power Book Vol. 002</h3>
+          <p>
+            The next chapter in the Power Book journey. Further details
+            and publication information will be added as development
+            progresses.
+          </p>
+          <span class="status">IN PROGRESS</span>
+        </article>
+      </div>
+
+      <div class="coming">
+        <strong class="red">More publications are on the way.</strong>
+        <p>
+          This library will grow to include original Phenomenal articles,
+          motivational resources, creative writing and future publications.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Phenomenal Digital & Business Hub</p>
+    <p>Think Beyond. Build Beyond. Become Phenomenal.</p>
+    <p>&copy; 2026 Phenomenal Digital & Business Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
