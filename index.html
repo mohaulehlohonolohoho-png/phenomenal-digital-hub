@@ -425,6 +425,7 @@
   <h3>Vacancy Archive</h3>
   <p>Historical employment opportunities retained for reference. Archived vacancies are no longer open for applications.</p>
   <p id="public-archive-empty">No vacancies have been archived yet.</p>
+  <div id="public-archive-list"></div>
 </section>
 
 <section id="services">
@@ -766,6 +767,74 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+
+  <script>
+    async function loadPublicVacancyArchive() {
+      const empty = document.getElementById("public-archive-empty");
+      const list = document.getElementById("public-archive-list");
+
+      try {
+        const response = await fetch("./vacancy-archive.json");
+        if (!response.ok) throw new Error("Archive file unavailable.");
+
+        const records = await response.json();
+        if (!Array.isArray(records) || records.length === 0) return;
+
+        empty.hidden = true;
+        list.replaceChildren();
+
+        records.forEach(record => {
+          const card = document.createElement("article");
+          card.className = "panel";
+
+          const heading = document.createElement("h4");
+          heading.textContent = record.title || "Archived vacancy";
+          card.appendChild(heading);
+
+          const details = [
+            ["Employer", record.employer],
+            ["Location", record.location],
+            ["Opportunity type", record.type],
+            ["Salary", record.salary],
+            ["Reference", record.reference],
+            ["Closing date", record.closing],
+            ["Archived", record.archivedAt ? new Date(record.archivedAt).toLocaleDateString() : ""],
+            ["Requirements", record.requirements]
+          ];
+
+          details.forEach(([label, value]) => {
+            if (!value) return;
+            const paragraph = document.createElement("p");
+            const strong = document.createElement("strong");
+            strong.textContent = label + ": ";
+            paragraph.append(strong, document.createTextNode(value));
+            card.appendChild(paragraph);
+          });
+
+          if (record.advert) {
+            try {
+              const url = new URL(record.advert);
+              if (url.protocol === "https:" || url.protocol === "http:") {
+                const link = document.createElement("a");
+                link.href = url.href;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = "View original advert";
+                card.appendChild(link);
+              }
+            } catch (error) {}
+          }
+
+          list.appendChild(card);
+        });
+      } catch (error) {
+        console.info("Public vacancy archive is not available yet.");
+      }
+    }
+
+    loadPublicVacancyArchive();
   </script>
 
 </body>
